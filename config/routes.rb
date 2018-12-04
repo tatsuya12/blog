@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'blogs#index'
-  resources :blogs
+  root 'contributions#index'
+  resources :contributions
 end
