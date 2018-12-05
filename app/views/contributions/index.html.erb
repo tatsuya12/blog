@@ -1,0 +1,14 @@
+<div class="contents row" >
+  <% @contributions.each do |contribution| %>
+    <div class="row">
+      <div class="col s12 m10">
+        <div class="card-panel">
+          <span><%= contribution.title %>
+          </span><br>
+          <span><%= contribution.text %>
+          </span></br>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,18 @@
+<div class="row">
+  <%= form_tag('/contributions', method: :post) do %>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="input_text" type="text" name="title" data-length="10">
+        <label for="input_text">Title</label>
+      </div>
+      <div class="input-field col s10">
+        <textarea id="textarea2" class="materialize-textarea" name="text"></textarea>
+        <label for="textarea2">Text</label>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<button class="btn waves-effect waves-light  teal accent-4" type="submit" >Submit
+  <i class="material-icons right">send</i>
+</button>
