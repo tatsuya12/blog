@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-  root 'contributions#index'
-  resources :contributions
+  resources :contributions, only: [:index, :new, :create]
 end
